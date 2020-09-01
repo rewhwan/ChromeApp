@@ -22,6 +22,11 @@ function deleteToDo(event) {
 //할일 목록을 로컬환경에 저장하는 함수
 function saveToDos() {
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+    if(toDos.length >= 10) {
+        toDoList.classList.add("overscroll");
+    }else {
+        toDoList.classList.remove("overscroll");
+    }
 }
 
 function paintToDo(text) {

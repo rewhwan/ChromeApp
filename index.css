@@ -101,7 +101,6 @@ input[type=text]::placeholder {
 .js-toDoList {
     padding: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow-y: scroll;
 }
 
 .js-toDoList li {
@@ -123,6 +122,11 @@ input[type=text]::placeholder {
     cursor: pointer;
 
     height: 100%;
+}
+
+.overscroll {
+    height: 354px;
+    overflow-y: scroll;
 }
 
 /*이름을 초기화 시켜주는 버튼 CSS*/
