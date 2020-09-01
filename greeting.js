@@ -8,7 +8,7 @@ const SHOWING_CN = "showing";
 
 //이름을 로컬스토리지에 저장시켜준다.
 function saveName(text) {
-    localStorage.setItem(USER_LS,text)
+    localStorage.setItem(USER_LS, text)
 }
 
 //form의 핸들러 함수
@@ -50,7 +50,7 @@ function loadName() {
 //리셋버튼 세팅
 function resetBtn() {
     reset.classList.add(SHOWING_CN);
-    reset.addEventListener("click",function () {
+    reset.addEventListener("click", function () {
         localStorage.removeItem(USER_LS);
         reset.classList.remove(SHOWING_CN);
         greeting.classList.remove(SHOWING_CN);

@@ -63,7 +63,7 @@ input[type=text]::placeholder {
 
 /*시계 관련 CSS*/
 .js-clock {
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100vw;
     margin: 10px 0;
 }
@@ -88,7 +88,7 @@ input[type=text]::placeholder {
     position: absolute;
     right: 5px;
     top: 5px;
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
 }
 
@@ -100,7 +100,7 @@ input[type=text]::placeholder {
 /*할일 목록 CSS*/
 .js-toDoList {
     padding: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow-y: scroll;
 }
 
@@ -132,8 +132,8 @@ input[type=text]::placeholder {
     bottom: 5px;
 
     cursor: pointer;
-    color: whitesmoke;
-    background-color: rgba(0,0,0,0.5);
+    color: orangered;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .reset-name span {

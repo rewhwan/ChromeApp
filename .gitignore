@@ -38,7 +38,6 @@
 # .idea/jarRepositories.xml
 .idea/modules.xml
 .idea/*.iml
-.idea/vcs.xml
 # .idea/modules
 # *.iml
 # *.ipr
@@ -107,3 +106,7 @@ fabric.properties
 .idea/codestream.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/phpstorm
+
+#Added by Rewhwan
+.idea/vcs.xml
+.idea/codeStyles

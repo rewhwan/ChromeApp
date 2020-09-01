@@ -21,7 +21,7 @@ function deleteToDo(event) {
 
 //할일 목록을 로컬환경에 저장하는 함수
 function saveToDos() {
-    localStorage.setItem(TODOS_LS,JSON.stringify(toDos));
+    localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
 function paintToDo(text) {
@@ -31,7 +31,7 @@ function paintToDo(text) {
     const newId = toDos.length + 1;
 
     delBtn.innerText = "❌";
-    delBtn.addEventListener("click",deleteToDo);
+    delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
     li.appendChild(delBtn);
     li.appendChild(span);
@@ -39,9 +39,9 @@ function paintToDo(text) {
     toDoList.appendChild(li);
 
     //배열에 지금 추가된 할일 목록을 추가
-    const toDoObj =  {
-      text: text,
-      id: newId
+    const toDoObj = {
+        text: text,
+        id: newId
     };
     toDos.push(toDoObj);
     saveToDos();
