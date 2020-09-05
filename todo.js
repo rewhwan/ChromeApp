@@ -13,10 +13,19 @@ function deleteToDo(event) {
     toDoList.removeChild(li);
 
     const cleanToDos = toDos.filter(function (toDo) {
-        return toDo.id !== parseInt(li.id);
+        if(toDo.id !== parseInt(li.id)) {
+            if(toDo.id > parseInt(li.id)) toDo.id = toDo.id -1;
+            return true;
+        }else {
+            return false;
+        }
     });
     toDos = cleanToDos;
     saveToDos();
+
+    toDoList.querySelectorAll("li").forEach(function (toDo){
+        if(toDo.id > parseInt(li.id)) li.id = --toDo.id;
+    });
 }
 
 //할일 목록을 로컬환경에 저장하는 함수
